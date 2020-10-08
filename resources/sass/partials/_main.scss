@@ -11,11 +11,16 @@ main{
         @include flex(row,wrap,flex-start,center);
         margin:10px 0;
         .pasta{
-            width: 33.3%;            
+            width: 33.3%;
+            height:215px;          
             text-align: center;
             margin-bottom: 10px;
             img{
                 width: 95%;
+                transition: width .35s ease-in-out;
+            }
+            img:hover{
+                width:100%;
             }
         }
     }

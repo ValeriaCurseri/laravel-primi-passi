@@ -149,21 +149,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Prodotti - Laravel primi passi</title>
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
-
     </head>
     <body>
         @include('template/header')
         <main>
             <div class="container">
-
+                
                 <h1>Prodotti</h1>
                 <h2>paste Lunghe</h2>
                 <div class="paste">
                     @foreach($pasteLunghe as $prodotto)
-                        <div class="pasta">
+                    <div class="pasta">
                             <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
                         </div>
-                    @endforeach
+                        @endforeach
                 </div>
                 <h2>paste corte</h2>
                 <div class="paste">

@@ -16,7 +16,9 @@
     <body>
         @include('template/header')
         <main>
-            <h1>Home</h1>
+            <div class="container">
+                <h1>Home</h1>
+            </div>
         </main>
         @include('template/footer')
     </body>

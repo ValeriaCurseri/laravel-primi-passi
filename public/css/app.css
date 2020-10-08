@@ -99,12 +99,18 @@ main .paste {
 
 main .paste .pasta {
   width: 33.3%;
+  height: 215px;
   text-align: center;
   margin-bottom: 10px;
 }
 
 main .paste .pasta img {
   width: 95%;
+  transition: width 0.35s ease-in-out;
+}
+
+main .paste .pasta img:hover {
+  width: 100%;
 }
 
 footer {
