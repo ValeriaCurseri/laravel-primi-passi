@@ -1,0 +1,13 @@
+nav{
+    @include flex(row,nowrap,center,center);
+    height: 40px;
+    list-style: none;
+    li{
+        padding:0 10px;
+        text-transform:uppercase;
+        a{
+            text-decoration: none;
+            color:rgb(83, 81, 81);
+        }
+    }
+}

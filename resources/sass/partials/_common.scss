@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 
-nav li{
-    text-transform:uppercase;
+h1,h2,h3,h4,h5,h6,li,p,span{
+    font-family: 'Faustina', serif;
 }
 
 h1{
-    text-transform:capitalize;
+    text-transform:uppercase;
+    padding:20px 0;
+}
+
+h1,h2{
+    font-weight: 600;
+}
+
+.container{ 
+    width:80%;
+    margin:0 auto;
 }

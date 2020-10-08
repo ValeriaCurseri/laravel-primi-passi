@@ -1,0 +1,12 @@
+footer{
+    height:70px;
+    .container{
+        @include flex(row,nowrap,space-between, center);
+        .logo{
+            img{
+                height: 60px;
+                margin: 5px 0;
+            }
+        }
+    }
+}

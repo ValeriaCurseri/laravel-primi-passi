@@ -148,36 +148,39 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Prodotti - Laravel primi passi</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
     </head>
     <body>
         @include('template/header')
         <main>
-            <h1>Prodotti</h1>
-            <div class="paste">
+            <div class="container">
+
+                <h1>Prodotti</h1>
                 <h2>paste Lunghe</h2>
-                @foreach($pasteLunghe as $prodotto)
-                    <div class="pasta">
-                        <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
-                    </div>
-                @endforeach
-            </div>
-            <div class="paste">
+                <div class="paste">
+                    @foreach($pasteLunghe as $prodotto)
+                        <div class="pasta">
+                            <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                        </div>
+                    @endforeach
+                </div>
                 <h2>paste corte</h2>
-                @foreach($pasteCorte as $prodotto)
+                <div class="paste">
+                    @foreach($pasteCorte as $prodotto)
                     <div class="pasta">
-                        <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
-                    </div>
-                @endforeach
-            </div>
-            <div class="paste">
+                            <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                        </div>
+                    @endforeach
+                </div>
                 <h2>paste cortissime</h2>
-                @foreach($pasteCortissime as $prodotto)
-                    <div class="pasta">
-                        <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
-                    </div>
-                @endforeach
+                <div class="paste">
+                    @foreach($pasteCortissime as $prodotto)
+                        <div class="pasta">
+                            <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </main>
         @include('template/footer')

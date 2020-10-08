@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Contatti - Laravel primi passi</title>
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <style>
+            main{
+                height: calc(100vh - 220px);
+            }
+        </style>
     </head>
     <body>
         @include('template/header')
-        <h1>Contatti</h1>
+        <main>
+            <h1>Contatti</h1>
+        </main>
         @include('template/footer')
     </body>
 </html>

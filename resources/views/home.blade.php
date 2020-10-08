@@ -6,10 +6,18 @@
 
         <title>Home - Laravel primi passi</title>
 
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <style>
+            main{
+                height: calc(100vh - 220px);
+            }
+        </style>
     </head>
     <body>
         @include('template/header')
-        <h1>Home</h1>
+        <main>
+            <h1>Home</h1>
+        </main>
         @include('template/footer')
     </body>
 </html>

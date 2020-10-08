@@ -1,0 +1,25 @@
+main{
+    background-color:#002d75;
+    color:#fff;
+    margin-top:150px;
+    padding: 50px 0;
+    h2{
+        text-transform: capitalize;
+        padding:10px 0;
+    }
+    .paste{
+        @include flex(row,wrap,flex-start,center);
+        margin:10px 0;
+        .pasta{
+            width: 33.3%;            
+            text-align: center;
+            margin-bottom: 10px;
+            img{
+                width: 95%;
+            }
+        }
+    }
+}
+
+
+        
