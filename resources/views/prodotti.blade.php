@@ -142,7 +142,7 @@
 
 @endphp
 
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -151,10 +151,14 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        @include('template/header')
-        <main>
-            <div class="container">
-                
+        @include('template/header') --}}
+
+        @extends('layout.app')
+
+        @section('titolo', 'Prodotti - Laravel primi passi')
+
+        @section('main')
+            <div class="container">                
                 <h1>Prodotti</h1>
                 <h2>paste Lunghe</h2>
                 <div class="paste">
@@ -181,7 +185,7 @@
                     @endforeach
                 </div>
             </div>
-        </main>
-        @include('template/footer')
+        @endsection
+        {{-- @include('template/footer')
     </body>
-</html>
+</html> --}}
