@@ -2,12 +2,121 @@ main{
     min-height: calc(100vh - 220px);
     background-color:#002d75;
     color:#fff;
-    margin-top:150px;
     padding: 50px 0;
+    position: relative;
+    // // possibilità 1
+    // margin-top:150px;
+    // possibilità 2
+    top:150px;
+    // main dell'home page
+    .container.home{
+        height:300px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        .prodotti{
+            height:100%;
+            border-radius: 5px;
+            background-image: url("../../img/prodotti.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:relative;
+            a{
+                color:#fff;
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: #BD8D3C;
+                }
+                h2{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    margin:0;
+                }
+            }
+        }
+        .contatti{
+            height:100%;
+            border-radius: 5px;
+            background-image: url("../../img/contatti.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:relative;
+            a{
+                color:#fff;
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: $primary-color;
+                }
+                h2{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    margin:0;
+                }
+            }
+        }
+        .prodotti:hover .overlay, .contatti:hover .overlay{
+            opacity:0.8;
+        }
+    }
+    // main della pagina prodotti e della pagina contatti
     h2{
         text-transform: capitalize;
         padding:10px 0;
     }
+    .bottoni-prodotti{
+        @include flex(row,nowrap,space-evenly,center);
+        height:50px;
+        button{
+            width:200px;
+            height:40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing:1px;
+            background-color: $primary-color;
+            color:#fff;
+            border:none;
+            border-radius:5px;
+            box-shadow: none;
+            transition: .5s ease;
+            a{
+                color:#fff;
+            }
+        }
+        button:hover{
+            width:220px;
+            height:50px;
+            font-size: 16px;
+        }
+    }
+    // .jumptarget::before {
+    //     content:"";
+    //     display:block;
+    //     height:150px; /* fixed header height*/
+    //     margin:50px 0 0; /* negative fixed header height */
+    // }
     .paste{
         @include flex(row,wrap,flex-start,center);
         margin:10px 0;

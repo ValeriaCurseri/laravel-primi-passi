@@ -15,7 +15,7 @@ h6,
 li,
 p,
 span {
-  font-family: "Faustina", serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -80,13 +80,130 @@ main {
   min-height: calc(100vh - 220px);
   background-color: #002d75;
   color: #fff;
-  margin-top: 150px;
   padding: 50px 0;
+  position: relative;
+  top: 150px;
+}
+
+main .container.home {
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .container.home .prodotti {
+  height: 100%;
+  border-radius: 5px;
+  background-image: url(/images/prodotti.jpg?1d64913105049d2b5e55f8e0656b9417);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .container.home .prodotti a {
+  color: #fff;
+}
+
+main .container.home .prodotti a .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #BD8D3C;
+}
+
+main .container.home .prodotti a h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+main .container.home .contatti {
+  height: 100%;
+  border-radius: 5px;
+  background-image: url(/images/contatti.jpg?f5e4e59dfe640af8bff882a743e591d2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .container.home .contatti a {
+  color: #fff;
+}
+
+main .container.home .contatti a .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #BD8D3C;
+}
+
+main .container.home .contatti a h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+main .container.home .prodotti:hover .overlay,
+main .container.home .contatti:hover .overlay {
+  opacity: 0.8;
 }
 
 main h2 {
   text-transform: capitalize;
   padding: 10px 0;
+}
+
+main .bottoni-prodotti {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+}
+
+main .bottoni-prodotti button {
+  width: 200px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #BD8D3C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  transition: 0.5s ease;
+}
+
+main .bottoni-prodotti button a {
+  color: #fff;
+}
+
+main .bottoni-prodotti button:hover {
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
 }
 
 main .paste {
@@ -126,8 +243,21 @@ footer .container {
   align-items: center;
 }
 
+footer .container .logo {
+  width: 50%;
+}
+
 footer .container .logo img {
   height: 60px;
   margin: 5px 0;
+}
+
+footer .container nav {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 
