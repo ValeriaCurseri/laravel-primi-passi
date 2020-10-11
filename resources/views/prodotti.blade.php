@@ -161,33 +161,39 @@
             <div class="container">                
                 <h1>Prodotti</h1>
                 <div class="bottoni-prodotti">
-                    <button type="button"><a href="#lunga">pasta lunga</a></button>
-                    <button type="button"><a href="#corta">pasta corta</a></button>
-                    <button type="button"><a href="#cortissima">pasta cortissima</a></button>
+                    <button class="button-anchor" type="button"><a href="#lunga">pasta lunga</a></button>
+                    <button class="button-anchor" type="button"><a href="#corta">pasta corta</a></button>
+                    <button class="button-anchor" type="button"><a href="#cortissima">pasta cortissima</a></button>
                 </div>
-                <h2 id="lunga">paste Lunghe</h2>
-                <div class="paste">
-                    @foreach($pasteLunghe as $prodotto)
-                    <div class="pasta">
-                        <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
-                    </div>
-                    @endforeach
-                </div>
-                <h2 id="corta">paste corte</h2>
-                <div class="paste">
-                    @foreach($pasteCorte as $prodotto)
-                    <div class="pasta">
-                            <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
-                        </div>
-                    @endforeach
-                </div>
-                <h2 id="cortissima">paste cortissime</h2>
-                <div class="paste">
-                    @foreach($pasteCortissime as $prodotto)
+                <div class="anchor" id="lunga">
+                    <h2>paste Lunghe</h2>
+                    <div class="paste">
+                        @foreach($pasteLunghe as $prodotto)
                         <div class="pasta">
                             <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
                         </div>
-                    @endforeach
+                        @endforeach
+                    </div>
+                </div>
+                <div class="anchor" id="corta">
+                    <h2>paste corte</h2>
+                    <div class="paste">
+                        @foreach($pasteCorte as $prodotto)
+                        <div class="pasta">
+                            <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="anchor" id="cortissima">
+                    <h2>paste cortissime</h2>
+                    <div class="paste">
+                        @foreach($pasteCortissime as $prodotto)
+                            <div class="pasta">
+                                <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         @endsection

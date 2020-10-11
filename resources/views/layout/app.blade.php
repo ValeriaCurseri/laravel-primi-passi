@@ -13,5 +13,7 @@
             @yield('main')
         </main>
         @include('template/footer')
+
+        <script src="../../js/app.js"></script>
     </body>
 </html>

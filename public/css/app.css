@@ -173,6 +173,14 @@ main h2 {
   padding: 10px 0;
 }
 
+main span {
+  display: block;
+}
+
+main span a {
+  color: #fff;
+}
+
 main .bottoni-prodotti {
   display: flex;
   flex-direction: row;

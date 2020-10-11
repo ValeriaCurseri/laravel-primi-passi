@@ -86,6 +86,12 @@ main{
         text-transform: capitalize;
         padding:10px 0;
     }
+    span{
+        display:block;
+        a{
+            color:#fff;
+        }
+    }
     .bottoni-prodotti{
         @include flex(row,nowrap,space-evenly,center);
         height:50px;
