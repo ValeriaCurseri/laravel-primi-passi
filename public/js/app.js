@@ -30216,15 +30216,17 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-$(document).ready(function () {
-  $(document).on('click', 'a[href^="#"]', function () {
-    $('html, body').stop().animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, 1000, 'linear');
-  });
-});
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // $(document).ready(function(){
+//     $(document).on('click', 'a[href^="#"]', function () {
+//         $('html, body').stop().animate({
+//             scrollTop: $($(this).attr('href')).offset().top
+//         }, 1000, 'linear');
+//     });
+// })
+// // opzionale!
+// const scroll = new SmoothScroll('.bottoni-prodotti a[href*="#"]',{
+//     speed: 800
+// })
 
 /***/ }),
 

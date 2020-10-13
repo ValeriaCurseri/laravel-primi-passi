@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -39,7 +45,6 @@ header {
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 1;
   box-shadow: 0px 0px 20px 5px #0000005e;
 }
@@ -168,20 +173,7 @@ main .container.home .contatti:hover .overlay {
   opacity: 0.8;
 }
 
-main h2 {
-  text-transform: capitalize;
-  padding: 10px 0;
-}
-
-main span {
-  display: block;
-}
-
-main span a {
-  color: #fff;
-}
-
-main .bottoni-prodotti {
+main .container.prodotti .bottoni-prodotti {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -190,7 +182,7 @@ main .bottoni-prodotti {
   height: 50px;
 }
 
-main .bottoni-prodotti button {
+main .container.prodotti .bottoni-prodotti button {
   width: 200px;
   height: 40px;
   text-transform: uppercase;
@@ -204,17 +196,22 @@ main .bottoni-prodotti button {
   transition: 0.5s ease;
 }
 
-main .bottoni-prodotti button a {
+main .container.prodotti .bottoni-prodotti button a {
   color: #fff;
 }
 
-main .bottoni-prodotti button:hover {
+main .container.prodotti .bottoni-prodotti button:hover {
   width: 220px;
   height: 50px;
   font-size: 16px;
 }
 
-main .paste {
+main .container.prodotti section h2 {
+  text-transform: capitalize;
+  padding: 10px 0;
+}
+
+main .container.prodotti section .paste {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -223,19 +220,19 @@ main .paste {
   margin: 10px 0;
 }
 
-main .paste .pasta {
+main .container.prodotti section .paste .pasta {
   width: 33.3%;
   height: 215px;
   text-align: center;
   margin-bottom: 10px;
 }
 
-main .paste .pasta img {
+main .container.prodotti section .paste .pasta img {
   width: 95%;
   transition: width 0.35s ease-in-out;
 }
 
-main .paste .pasta img:hover {
+main .container.prodotti section .paste .pasta img:hover {
   width: 100%;
 }
 

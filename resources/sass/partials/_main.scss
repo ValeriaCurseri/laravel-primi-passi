@@ -82,61 +82,68 @@ main{
         }
     }
     // main della pagina prodotti e della pagina contatti
-    h2{
-        text-transform: capitalize;
-        padding:10px 0;
-    }
-    span{
-        display:block;
-        a{
-            color:#fff;
-        }
-    }
-    .bottoni-prodotti{
-        @include flex(row,nowrap,space-evenly,center);
-        height:50px;
-        button{
-            width:200px;
-            height:40px;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing:1px;
-            background-color: $primary-color;
-            color:#fff;
-            border:none;
-            border-radius:5px;
-            box-shadow: none;
-            transition: .5s ease;
-            a{
-                color:#fff;
-            }
-        }
-        button:hover{
-            width:220px;
+    .container.prodotti{
+        // height: 100%;
+        // overflow-y: scroll;
+        // scroll-snap-type: y mandatory;
+        .bottoni-prodotti{
+            @include flex(row,nowrap,space-evenly,center);
             height:50px;
-            font-size: 16px;
-        }
-    }
-    // .jumptarget::before {
-    //     content:"";
-    //     display:block;
-    //     height:150px; /* fixed header height*/
-    //     margin:50px 0 0; /* negative fixed header height */
-    // }
-    .paste{
-        @include flex(row,wrap,flex-start,center);
-        margin:10px 0;
-        .pasta{
-            width: 33.3%;
-            height:215px;          
-            text-align: center;
-            margin-bottom: 10px;
-            img{
-                width: 95%;
-                transition: width .35s ease-in-out;
+            button{
+                width:200px;
+                height:40px;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing:1px;
+                background-color: $primary-color;
+                color:#fff;
+                border:none;
+                border-radius:5px;
+                box-shadow: none;
+                transition: .5s ease;
+                a{
+                    color:#fff;
+                }
             }
-            img:hover{
-                width:100%;
+            button:hover{
+                width:220px;
+                height:50px;
+                font-size: 16px;
+            }
+        }
+        section{
+            // // inizio con class anchor
+            // display: block;
+            // position: relative;
+            // top: -250px;
+            // visibility: hidden;
+            // // fine con class anchor
+            // width: 100%;
+            // scroll-snap-align: start;
+            // scroll-snap-align: center;
+            // height: calc(100vh - 150px);
+            // // scroll-snap-align: start;
+            // position: relative;
+            h2{
+                text-transform: capitalize;
+                padding:10px 0;
+            }
+            .paste{
+                @include flex(row,wrap,flex-start,center);
+                margin:10px 0;
+                .pasta{
+                    width: 33.3%;
+                    height:215px;          
+                    text-align: center;
+                    margin-bottom: 10px;
+                    img{
+                        width: 95%;
+                        transition: width .35s ease-in-out;
+                    }
+                    img:hover{
+                        width:100%;
+                    }
+                }
             }
         }
     }
