@@ -3,11 +3,7 @@ main{
     background-color:#002d75;
     color:#fff;
     padding: 50px 0;
-    position: relative;
-    // // possibilità 1
-    // margin-top:150px;
-    // possibilità 2
-    top:150px;
+    margin-top:150px;
     // main dell'home page
     .container.home{
         height:300px;
@@ -144,6 +140,19 @@ main{
                         width:100%;
                     }
                 }
+            }
+        }
+    }
+    // main della pagina dettaglioprodotti
+    .container.prodotto{
+        .dettagli{
+            ul{
+                list-style: none;
+            }
+            @include flex(row,nowrap,center,center);
+            img{
+                max-width: 40%;
+                margin-left: 20px;
             }
         }
     }

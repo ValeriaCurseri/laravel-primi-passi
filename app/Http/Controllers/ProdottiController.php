@@ -32,19 +32,18 @@ class ProdottiController extends Controller
     }
 
     public function dettaglio($slug){
+        $trovato = false;
         foreach ($this->prodotti as $prodotto){
-            $trovato = false;
             if($prodotto['slug'] == $slug){
                 $trovato = true;
             }
             
             if($trovato){
-                $result = view('dettaglioprodotti', compact('prodotto'));
-            } else {
-                $result = abort(404);
+                return view('dettaglioprodotti', compact('prodotto'));
             }
-
-            return $result;
+    
         }
+        
+        return abort(404);
     }
 }

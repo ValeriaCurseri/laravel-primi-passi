@@ -8,7 +8,6 @@
 
 html,
 body {
-  height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -21,7 +20,7 @@ h6,
 li,
 p,
 span {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 h1 {
@@ -90,8 +89,7 @@ main {
   background-color: #002d75;
   color: #fff;
   padding: 50px 0;
-  position: relative;
-  top: 150px;
+  margin-top: 150px;
 }
 
 main .container.home {
@@ -238,6 +236,23 @@ main .container.prodotti section .paste .pasta img {
 
 main .container.prodotti section .paste .pasta img:hover {
   width: 100%;
+}
+
+main .container.prodotto .dettagli {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container.prodotto .dettagli ul {
+  list-style: none;
+}
+
+main .container.prodotto .dettagli img {
+  max-width: 40%;
+  margin-left: 20px;
 }
 
 footer {
