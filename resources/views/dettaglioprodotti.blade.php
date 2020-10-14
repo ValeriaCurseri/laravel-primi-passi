@@ -10,7 +10,7 @@
                         <li><strong>Tipo: </strong>pasta {{$prodotto['tipo']}}</li>
                         <li><strong>Cottura: </strong>{{$prodotto['cottura']}}</li>
                         <li><strong>Peso: </strong>{{$prodotto['peso']}}</li>
-                        <li>{{$prodotto['descrizione']}}</li>
+                        <li><p>{{$prodotto['descrizione']}}</p></li>
                     </ul>
                     <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}">
                 </div>

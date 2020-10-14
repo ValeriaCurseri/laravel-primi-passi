@@ -15,7 +15,8 @@
                     <div class="paste">
                         @foreach($pasteLunghe as $key => $prodotto)
                         <div class="pasta">
-                            <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}">
+                            {{-- <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}"> --}}
+                            <a href="{{ route('dettaglio-prodotto', ['id'=>$key]) }}">
                                 <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
                             </a>
                         </div>
@@ -27,7 +28,8 @@
                     <div class="paste">
                         @foreach($pasteCorte as $key => $prodotto)
                         <div class="pasta">
-                            <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}">
+                            {{-- <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}"> --}}
+                            <a href="{{ route('dettaglio-prodotto', ['id'=>$key]) }}">
                                 <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
                             </a>
                         </div>
@@ -39,7 +41,8 @@
                     <div class="paste">
                         @foreach($pasteCortissime as $key => $prodotto)
                             <div class="pasta">
-                                <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}">
+                                {{-- <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}"> --}}
+                                <a href="{{ route('dettaglio-prodotto', ['id'=>$key]) }}">
                                     <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
                                 </a>
                             </div>
