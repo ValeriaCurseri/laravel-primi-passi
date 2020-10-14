@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'StaticPageController@home')->name('home');
-
-Route::get('/prodotti', 'StaticPageController@prodotti')->name('prodotti');
-
 Route::get('/contatti', 'StaticPageController@contatti')->name('contatti');
+Route::get('/prodotti', 'ProdottiController@prodotti')->name('prodotti');
+// DA FARE Route::get('/prodotti/{id}', 'ProdottiController@dettaglio')->name('dettaglio-prodotto');
+Route::get('/prodotti/{slug}', 'ProdottiController@dettaglio')->name('dettaglio-prodotto');

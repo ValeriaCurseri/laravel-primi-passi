@@ -13,9 +13,11 @@
                 <section class="anchor" id="lunga">
                     <h2>paste Lunghe</h2>
                     <div class="paste">
-                        @foreach($pasteLunghe as $prodotto)
+                        @foreach($pasteLunghe as $key => $prodotto)
                         <div class="pasta">
-                            <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                            <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}">
+                                <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                            </a>
                         </div>
                         @endforeach
                     </div>
@@ -23,9 +25,11 @@
                 <section class="anchor" id="corta">
                     <h2>paste corte</h2>
                     <div class="paste">
-                        @foreach($pasteCorte as $prodotto)
+                        @foreach($pasteCorte as $key => $prodotto)
                         <div class="pasta">
-                            <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                            <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}">
+                                <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                            </a>
                         </div>
                         @endforeach
                     </div>
@@ -33,9 +37,11 @@
                 <section class="anchor" id="cortissima">
                     <h2>paste cortissime</h2>
                     <div class="paste">
-                        @foreach($pasteCortissime as $prodotto)
+                        @foreach($pasteCortissime as $key => $prodotto)
                             <div class="pasta">
-                                <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                                <a href="{{ route('dettaglio-prodotto', $prodotto['slug']) }}">
+                                    <img src="{{ $prodotto['src'] }}" alt="{{ $prodotto['titolo'] }}}">
+                                </a>
                             </div>
                         @endforeach
                     </div>
