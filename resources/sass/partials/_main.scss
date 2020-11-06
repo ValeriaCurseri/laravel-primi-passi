@@ -128,10 +128,9 @@ main{
                 @include flex(row,wrap,flex-start,center);
                 margin:10px 0;
                 .pasta{
-                    width: 33.3%;
-                    height:215px;          
+                    width: 33.3%;         
                     text-align: center;
-                    margin-bottom: 10px;
+                    margin-bottom: 25px;
                     img{
                         width: 95%;
                         transition: width .35s ease-in-out;

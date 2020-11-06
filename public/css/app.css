@@ -224,9 +224,8 @@ main .container.prodotti section .paste {
 
 main .container.prodotti section .paste .pasta {
   width: 33.3%;
-  height: 215px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 main .container.prodotti section .paste .pasta img {
